@@ -1,0 +1,15 @@
+﻿@model PegSolver.Mvc.Models.BoardViewModel
+
+@{
+    ViewBag.Title = "Peg Solver";
+}
+
+<canvas id="gameCanvas" height="300px" width="500px"></canvas>
+
+<p id="buttonSolve">Solve</p>
+
+@section Header{
+    <script src="@Url.Content("/Scripts/custom/common.js")" type="text/javascript"></script>
+    <script src="@Url.Content("/Scripts/custom/board02.js")" type="text/javascript"></script>
+    <script src="@Url.Content("/Scripts/custom/board-player.js")" type="text/javascript"></script>
+}

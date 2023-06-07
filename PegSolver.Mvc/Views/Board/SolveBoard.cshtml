@@ -1,0 +1,21 @@
+﻿@model PegSolver.Mvc.Models.SolvedBoardViewModel
+
+@{
+    ViewBag.Title = "SolveBoard";
+}
+<canvas id="gameCanvas" height="300px" width="500px"></canvas>
+
+
+
+@section Header{
+    <script src="@Url.Content("/Scripts/custom/common.js")" type="text/javascript"></script>
+    <script src="@Url.Content("/Scripts/custom/board02.js")" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        @Html.Raw(Model.MovesJson)
+    </script>
+    <script src="@Url.Content("/Scripts/custom/SolvedBoard.js")" type="text/javascript"></script>
+}
+
+
+
