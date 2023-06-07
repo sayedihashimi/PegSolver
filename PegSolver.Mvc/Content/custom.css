@@ -1,10 +1,4 @@
-﻿canvas
-{
-    border-color: Black;
-    border-width: 1px;
-    border-style: solid;
-}
-#buttonSolve
+﻿#buttonSolve
 {
     display:block;
     width:100px;
@@ -13,6 +7,7 @@
     border-radius: 10px;
     text-align:center;
     cursor:pointer;
+    background-color: #fff;
 }
 #buttonSolve:hover
 {
